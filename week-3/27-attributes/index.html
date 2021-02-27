@@ -42,7 +42,7 @@
               <legend>Billing Address</legend>
               <p>
                 <label for="billing-address-1">Address Line 1</label>
-                <input type="text" name="billing-address-1" id="billing-address-1" />
+                <input required type="text" name="billing-address-1" id="billing-address-1" />
               </p>
               <p>
                 <label for="billing-address-2">Address Line 2</label>
@@ -50,18 +50,18 @@
               </p>
               <p>
                 <label for="billing-postcode">Postcode</label>
-                <input type="text" name="billing-postcode" id="billing-postcode" />
+                <input required type="text" name="billing-postcode" id="billing-postcode" />
               </p>
               <p>
                 <label for="billing-city">City</label>
-                <input type="text" name="billing-city" id="billing-city" />
+                <input required type="text" name="billing-city" id="billing-city" />
               </p>
             </fieldset>
             <fieldset>
               <legend>Delivery Address</legend>
               <p>
                 <label for="delivery-address-1">Address Line 1</label>
-                <input type="text" name="delivery-address-1" id="delivery-address-1" />
+                <input required type="text" name="delivery-address-1" id="delivery-address-1" />
               </p>
               <p>
                 <label for="delivery-address-2">Address Line 2</label>
@@ -70,6 +70,7 @@
               <p>
                 <label for="delivery-address-postcode">Postcode</label>
                 <input
+                  required
                   type="text"
                   name="delivery-address-postcode"
                   id="delivery-address-postcode"
@@ -77,17 +78,30 @@
               </p>
               <p>
                 <label for="delivery-address-city">City</label>
-                <input type="text" name="delivery-address-city" id="delivery-address-city" />
+                <input
+                  required
+                  type="text"
+                  name="delivery-address-city"
+                  id="delivery-address-city"
+                />
               </p>
               <p>
                 <label for="delivery-country">Country</label>
-                <input type="text" name="delivery-country" id="delivery-country" />
+                <input
+                  readonly
+                  value="united kingdom"
+                  type="text"
+                  name="delivery-country"
+                  id="delivery-country"
+                />
               </p>
               <fieldset>
                 <legend>Delivery Options</legend>
                 <label>
                   <input
                     type="radio"
+                    checked
+                    disabled
                     name="delivery-option"
                     id="delivery-option"
                     value="standard"
